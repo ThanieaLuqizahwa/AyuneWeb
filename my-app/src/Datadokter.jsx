@@ -408,10 +408,10 @@ const DataDokter = () => {
               <div className="account">
                 <h3>Akun Saya</h3>
                 <p>
-                  <Link to="/profil">Profil</Link>
+                  <Link to="/Profil">Profil</Link>
                 </p>
                 <p>
-                  <Link to="/signup">Daftar</Link>
+                  <Link to="/Signup">Daftar</Link>
                 </p>
                 <p>
                   <Link to="/Login">Masuk</Link>

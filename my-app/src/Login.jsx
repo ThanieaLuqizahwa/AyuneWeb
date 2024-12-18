@@ -56,10 +56,10 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
-              <Link to="/forgotpass" className="login-admin">
+              <Link to="/ForgotPass" className="login-admin">
                 Lupa Password anda? Klik di sini
               </Link>
-              <Link to="/Loginadmin" className="login-admin">
+              <Link to="/LoginAdmin" className="login-admin">
                 Login sebagai Admin
               </Link>
               <button type="submit" className="btn">
@@ -72,7 +72,7 @@ const Login = () => {
           <div className="signup">
             <h2 className="subtext">"Mari kita mulai perjalanan kulit anda"</h2>
             <h2>Buat Akun Anda</h2>
-            <Link to="/signup" className="btn">
+            <Link to="/SignUp" className="btn">
               MENDAFTAR
             </Link>
           </div>

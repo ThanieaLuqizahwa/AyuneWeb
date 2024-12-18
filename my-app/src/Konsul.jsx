@@ -7,7 +7,7 @@ import "./file_css/consul.css";
 
 const socket = io("http://localhost:5000"); // Hubungkan ke backend di port 5000
 
-const Consul = () => {
+const Konsul = () => {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
   const [showFirstPopup, setShowFirstPopup] = useState(false);
@@ -25,7 +25,7 @@ const Consul = () => {
     if (dokter) {
       localStorage.setItem("selectedDoctor", JSON.stringify(dokter));
     } else {
-      navigate("/ahli"); // Jika data dokter tidak ditemukan, arahkan ke halaman Ahli
+      navigate("/Ahli"); // Jika data dokter tidak ditemukan, arahkan ke halaman Ahli
     }
 
     // Konsultasi
@@ -215,4 +215,4 @@ const Consul = () => {
   );
 };
 
-export default Consul;
+export default Konsul;

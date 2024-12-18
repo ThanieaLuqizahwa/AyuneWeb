@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./file_css/datadeskripsiproduk.css";
 import AdminGuard from "./AdminGuard";
 
-const Datadeskripsiproduk = () => {
+const DataDeskripsiProduk = () => {
   const [dataProduk, setDataProduk] = useState([]);
   const [tipeKulit, setTipeKulit] = useState([]);
   const [masalahKulit, setMasalahKulit] = useState([]);
@@ -419,10 +419,10 @@ const Datadeskripsiproduk = () => {
               <div className="account">
                 <h3>Akun Saya</h3>
                 <p>
-                  <Link to="/profil">Profil</Link>
+                  <Link to="/Profil">Profil</Link>
                 </p>
                 <p>
-                  <Link to="/signup">Daftar</Link>
+                  <Link to="/SignUp">Daftar</Link>
                 </p>
                 <p>
                   <Link to="/Login">Masuk</Link>
@@ -453,4 +453,4 @@ const Datadeskripsiproduk = () => {
   );
 };
 
-export default Datadeskripsiproduk;
+export default DataDeskripsiProduk;

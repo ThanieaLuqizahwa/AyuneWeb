@@ -23,7 +23,7 @@ app.use(
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "pass",
+  password: "",
   database: "ayune_database",
 });
 

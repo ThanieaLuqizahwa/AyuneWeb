@@ -1,5 +1,5 @@
 import React from "react";
-import ProdukList from "./components/produkList";
+import ProdukList from "./components/ProdukList";
 import Header from "./components/HeaderAfterLogin";
 import Footer from "./components/Footer";
 

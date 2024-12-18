@@ -458,10 +458,10 @@ const DataProduk = () => {
               <div className="account">
                 <h3>Akun Saya</h3>
                 <p>
-                  <Link to="/profil">Profil</Link>
+                  <Link to="/Profil">Profil</Link>
                 </p>
                 <p>
-                  <Link to="/signup">Daftar</Link>
+                  <Link to="/SignUp">Daftar</Link>
                 </p>
                 <p>
                   <Link to="/Login">Masuk</Link>

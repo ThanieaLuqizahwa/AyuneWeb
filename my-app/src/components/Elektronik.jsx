@@ -1,6 +1,6 @@
 import React from "react";
 
-const electronic = () => {
+const Elektronik = () => {
   return (
     <div className="payment-options">
       <div id="electronic">
@@ -37,4 +37,4 @@ const electronic = () => {
   );
 };
 
-export default electronic;
+export default Elektronik;

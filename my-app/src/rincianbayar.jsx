@@ -26,7 +26,7 @@ const RincianBayar = () => {
         <div className="bayar-page">
           <div className="error-message">
             <h2>Data dokter tidak ditemukan.</h2>
-            <Link to="/ahli">
+            <Link to="/Ahli">
               <button className="back-button">Kembali ke daftar ahli</button>
             </Link>
           </div>

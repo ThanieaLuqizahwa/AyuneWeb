@@ -11,7 +11,6 @@ const HeaderDokter = () => {
     </div>
         <h1 className="dokter">Hallo Dokter... Selamat Bertugas!</h1>
     </header>
-
   );
 };
 

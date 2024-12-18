@@ -24,7 +24,7 @@ const ForgotPass = () => {
           />
         </div>
         <br />
-        <Link to="/resetpass" className="btn">
+        <Link to="/ResetPass" className="btn">
           Kirim
         </Link>
       </section>

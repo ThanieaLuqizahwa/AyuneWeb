@@ -207,7 +207,7 @@ const SignUp = () => {
                 <Link to="#">Profil</Link>
               </p>
               <p>
-                <Link to="/signup">Daftar</Link>
+                <Link to="/Signup">Daftar</Link>
               </p>
               <p>
                 <Link to="/Login">Masuk</Link>

@@ -63,7 +63,7 @@ const ProdukToner = () => {
                 }}
               >
                 <div className="flex justify-center">
-                  <Link to={`/produk/${item.id}`}>
+                  <Link to={`/Produk/${item.id}`}>
                     <img
                       src={item.gambar}
                       alt={item.nama_produk || "Produk"}

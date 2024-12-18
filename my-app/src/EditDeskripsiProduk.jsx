@@ -88,16 +88,19 @@ const EditDeskripsiProduk = () => {
           <nav>
             <ul>
               <li>
-                <Link to="/HomeAfterLogin">DASHBOARD</Link>
+                <Link to="/Dashboard">DASHBOARD</Link>
               </li>
               <li>
-                <Link to="/AboutUs_Login">DATA PRODUK</Link>
+                <Link to="/DataProduk">DATA PRODUK</Link>
               </li>
               <li>
-                <Link to="/Datadokter">DATA DOKTER</Link>
+                <Link to="/DataDeskripsiProduk">DATA DESKRIPSI PRODUK</Link>
               </li>
               <li>
-                <Link to="/Ahli">DATA USER</Link>
+                <Link to="/DataDokter">DATA DOKTER</Link>
+              </li>
+              <li>
+                <Link to="/DataUser">DATA USER</Link>
               </li>
             </ul>
           </nav>

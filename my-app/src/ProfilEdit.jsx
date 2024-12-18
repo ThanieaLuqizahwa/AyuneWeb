@@ -33,7 +33,7 @@ const ProfilEdit = () => {
         <div className="profile-coin-container">
                 <div className="profile-picture">
                     <img src="assets/images/emptyprofile.png" alt="Edit Profile"/>
-                    <Link to="/profil_edit"><p>Edit Profil</p></Link>
+                    <Link to="/ProfilEdit"><p>Edit Profil</p></Link>
                 </div>
                 <div className="profile-info">
                     <h3>AYUNE COINS</h3>
@@ -56,7 +56,7 @@ const ProfilEdit = () => {
             <label htmlFor="gender">Jenis Kelamin</label>
             <input id="gender" type="text" placeholder="Masukan Gender Anda" />
 
-            <Link to="/profil">
+            <Link to="/Profil">
             <button type="button" className="logout-btn-simpan">
               Simpan Perubahan
             </button>

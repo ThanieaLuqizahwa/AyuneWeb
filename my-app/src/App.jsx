@@ -15,7 +15,7 @@ import OpsiBayar from "./OpsiBayar.jsx";
 import RincianBayar from "./RincianBayar.jsx";
 import QR from "./QR.jsx";
 import VA from "./VA.jsx";
-import Consul from "./Consul.jsx";
+import Konsul from "./Konsul.jsx";
 import UlasanAhli from "./UlasanAhli.jsx";
 import Produk from "./Produk.jsx";
 import ProdukPembersih from "./ProdukPembersih.jsx";
@@ -41,6 +41,7 @@ import DataDokter from "./DataDokter.jsx";
 import DataUser from "./DataUser.jsx";
 import DataProduk from "./DataProduk.jsx";
 import EditDeskripsiProduk from "./EditDeskripsiProduk.jsx";
+import EditPro from "./EditPro.jsx";
 import Dashboard from "./Dashboard.jsx";
 import AdminGuard from "./AdminGuard";
 import PasienKonsul from "./PasienKonsul"; // Ditambahkan untuk PasienKonsul
@@ -48,9 +49,11 @@ import PasienKonsul from "./PasienKonsul"; // Ditambahkan untuk PasienKonsul
 import UlasanProduk from "./UlasanProduk.jsx";
 import HeaderDokter from "./components/HeaderDokter.jsx";
 import FooterDokter from "./components/FooterDokter.jsx";
-import ProdukList from "./components/produkList.jsx";
+import ProdukList from "./components/ProdukList.jsx";
 import ProdukListRecom from "./components/ProdukListRecom.jsx";
-import Datadeskripsiproduk from "./DataDeskripsiProduk.jsx";
+import DataDeskripsiProduk from "./DataDeskripsiProduk.jsx";
+import KonsulDokter from "./components/KonsulDokter.jsx";
+import Elektronik from "./components/Elektronik.jsx";
 
 const App = () => {
   // Simulasi data user yang sudah login
@@ -69,7 +72,7 @@ const App = () => {
           <Route path="/Ahli" element={<Ahli />} />
           <Route path="/HomeAfterLogin" element={<HomeAfterLogin />} />
           <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/AboutUsLogin" element={<AboutUsLogin />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Profil" element={<Profil user={user} />} />{" "}
@@ -96,7 +99,7 @@ const App = () => {
           <Route path="/RincianBayar" element={<RincianBayar />} />
           <Route path="/QR" element={<QR />} />
           <Route path="/VA" element={<VA />} />
-          <Route path="/Consul" element={<Consul />} />
+          <Route path="/Konsul" element={<Konsul />} />
           <Route path="/UlasanAhli" element={<UlasanAhli />} />
           <Route path="/Recom" element={<Recom />} />
           <Route
@@ -113,6 +116,8 @@ const App = () => {
           <Route path="/FooterDokter" element={<FooterDokter />} />
           <Route path="/ProdukList" element={<ProdukList />} />
           <Route path="/ProdukListRecom" element={<ProdukListRecom />} />
+          <Route path="/KonsulDokter" element={<KonsulDokter />} />
+          <Route path="/Elektronik" element={<Elektronik />} />
           <Route
             path="/DataDokter"
             element={
@@ -122,7 +127,7 @@ const App = () => {
             }
           />
           <Route
-            path="/Datauser"
+            path="/DataUser"
             element={
               <AdminGuard>
                 <DataUser />
@@ -146,6 +151,14 @@ const App = () => {
             }
           />
           <Route
+            path="/EditPro/:id"
+            element={
+              <AdminGuard>
+                <EditPro />
+              </AdminGuard>
+            }
+          />
+          <Route
             path="/Dashboard"
             element={
               <AdminGuard>
@@ -154,15 +167,15 @@ const App = () => {
             }
           />
           <Route
-            path="/Datadeskripsiproduk"
+            path="/DataDeskripsiProduk"
             element={
               <AdminGuard>
-                <Datadeskripsiproduk />
+                <DataDeskripsiProduk />
               </AdminGuard>
             }
           />
           {/* Tambahkan rute untuk PasienKonsul */}
-          <Route path="/pasienkonsul" element={<PasienKonsul />} />
+          <Route path="/PasienKonsul" element={<PasienKonsul />} />
           {/* Rute fallback untuk 404 */}
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>

@@ -17,7 +17,7 @@ const QR = () => {
   };
 
   const handleRedirect = () => {
-    navigate("/Consul"); // Mengarahkan ke halaman konsultasi
+    navigate("/Konsul"); // Mengarahkan ke halaman konsultasi
   };
 
   return (

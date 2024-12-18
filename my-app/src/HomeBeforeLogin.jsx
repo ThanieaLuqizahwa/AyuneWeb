@@ -16,7 +16,7 @@ const HomeBeforeLogin = () => {
           <p>Segera daftarkan diri Anda dan ketahui masalah kulit Anda bersama dokter kecantikan terpercaya dari Kami</p>
           <div className="buttons">
             <Link to="/Login"><button>Masuk</button></Link>
-            <Link to="/signup"><button>Daftar</button></Link>
+            <Link to="/SignUp"><button>Daftar</button></Link>
           </div>
         </div>
         <div className="hero-image">
@@ -28,7 +28,7 @@ const HomeBeforeLogin = () => {
         <div className="product-section">
           <h2 className="product-title">Produk Skincare yang Sedang Tren</h2>
           <div className="auth-buttons">
-            <Link to="/produk" className="btn-right"><button>Selengkapnya &gt;</button></Link>
+            <Link to="/Produk" className="btn-right"><button>Selengkapnya &gt;</button></Link>
           </div>
         </div>
         <div className="product-list">

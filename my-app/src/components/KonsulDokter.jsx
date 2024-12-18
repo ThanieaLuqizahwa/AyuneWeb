@@ -1,22 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./file_css/consul.css"; // Pastikan path CSS benar
+// import "./file_css/consul.css"; 
 import { io } from "socket.io-client";
 import moment from "moment";
 import axios from "axios";
 
-
-
-
-const ConsulDokter = () => {
-  const [showPopup, setShowPopup] = useState(false); // State untuk pop-up pertama
-  const [showSecondPopup, setShowSecondPopup] = useState(false); // State untuk pop-up kedua
+const KonsulDokter = () => {
+  const [showPopup, setShowPopup] = useState(false); 
+  const [showSecondPopup, setShowSecondPopup] = useState(false);
   const [rating, setRating] = useState(0); // State untuk menyimpan rating
   const fileInputRef = useRef(null);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const socket = useRef(null); // Menggunakan useRef agar tidak terbuat ulang
-
 
   const senderId = 2; // ID Dokter
   const receiverId = 1; // ID Pasien
@@ -123,7 +119,7 @@ const ConsulDokter = () => {
               <Link to="/HomeAfterLogin">BERANDA</Link>
             </li>
             <li>
-              <Link to="/AboutUs_Login">TENTANG KAMI</Link>
+              <Link to="/AboutUsLogin">TENTANG KAMI</Link>
             </li>
             <li>
               <Link to="/Produk">PRODUK</Link>
@@ -134,8 +130,8 @@ const ConsulDokter = () => {
           </ul>
         </nav>
         <div className="auth-buttons">
-          <Link to="/profil">
-            <button>Ayyunie</button>
+          <Link to="/Profil">
+            <button>Profil</button>
           </Link>
         </div>
       </header>
@@ -351,13 +347,13 @@ const ConsulDokter = () => {
             <div className="account">
               <h3>Akun Saya</h3>
               <p>
-                <Link to="/profil">Profil</Link>
+                <Link to="/Profil">Profil</Link>
               </p>
               <p>
-                <Link to="/signup">Daftar</Link>
+                <Link to="/SignUp">Daftar</Link>
               </p>
               <p>
-                <Link to="/login">Masuk</Link>
+                <Link to="/Login">Masuk</Link>
               </p>
             </div>
             <div className="social-media">
@@ -384,4 +380,4 @@ const ConsulDokter = () => {
   );
 };
 
-export default ConsulDokter;
+export default KonsulDokter;

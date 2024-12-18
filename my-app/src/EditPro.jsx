@@ -3,7 +3,7 @@ import { useNavigate, useParams, Link } from "react-router-dom"; // Add Link imp
 import "./file_css/datadokter.css"; // Pastikan path CSS benar
 import AdminGuard from "./AdminGuard";
 
-const EditDeskripsiProduk = () => {
+const EditPro = () => {
   const { id } = useParams(); // Untuk mendapatkan ID produk yang ingin diedit
   const [produk, setProduk] = useState({
     deskripsi: "",
@@ -55,16 +55,19 @@ const EditDeskripsiProduk = () => {
           <nav>
             <ul>
               <li>
-                <Link to="/HomeAfterLogin">DASHBOARD</Link>
+                <Link to="/Dasboard">DASHBOARD</Link>
               </li>
               <li>
-                <Link to="/AboutUs_Login">DATA PRODUK</Link>
+                <Link to="/DataProduk">DATA PRODUK</Link>
               </li>
               <li>
-                <Link to="/Datadokter">DATA DOKTER</Link>
+                <Link to="/DataProduk">DATA DESKRIPSI PRODUK</Link>
               </li>
               <li>
-                <Link to="/Ahli">DATA USER</Link>
+                <Link to="/DataDokter">DATA DOKTER</Link>
+              </li>
+              <li>
+                <Link to="/DataUser">DATA USER</Link>
               </li>
             </ul>
           </nav>
@@ -149,10 +152,10 @@ const EditDeskripsiProduk = () => {
               <div className="account">
                 <h3>Akun Saya</h3>
                 <p>
-                  <Link to="/profil">Profil</Link>
+                  <Link to="/Profil">Profil</Link>
                 </p>
                 <p>
-                  <Link to="/signup">Daftar</Link>
+                  <Link to="/SignUp">Daftar</Link>
                 </p>
                 <p>
                   <Link to="/Login">Masuk</Link>
@@ -183,4 +186,4 @@ const EditDeskripsiProduk = () => {
   );
 };
 
-export default EditDeskripsiProduk;
+export default EditPro;

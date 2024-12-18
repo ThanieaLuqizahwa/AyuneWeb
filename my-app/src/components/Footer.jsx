@@ -30,7 +30,7 @@ const Footer = () => {
               <Link to="/">Profil</Link>
             </p>
             <p>
-              <Link to="/signup">Daftar</Link>
+              <Link to="/SignUp">Daftar</Link>
             </p>
             <p>
               <Link to="/Login">Masuk</Link>
