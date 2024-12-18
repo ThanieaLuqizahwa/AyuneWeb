@@ -253,16 +253,16 @@ const DataProduk = () => {
                 <Link to="/Dashboard">DASHBOARD</Link>
               </li>
               <li>
-                <Link to="/Dataproduk">DATA PRODUK</Link>
+                <Link to="/DataProduk">DATA PRODUK</Link>
               </li>
               <li>
-                <Link to="/Datadeskripsiproduk">DATA DESKRIPSI PRODUK</Link>
+                <Link to="/DataDeskripsiProduk">DATA DESKRIPSI PRODUK</Link>
               </li>
               <li>
-                <Link to="/Datadokter">DATA DOKTER</Link>
+                <Link to="/DataDokter">DATA DOKTER</Link>
               </li>
               <li>
-                <Link to="/Datauser">DATA USER</Link>
+                <Link to="/DataUser">DATA USER</Link>
               </li>
             </ul>
           </nav>

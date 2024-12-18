@@ -44,7 +44,7 @@ const DeskripsiProduk = () => {
 
   const handleModal = (action) => {
     if (action === "mengerti") {
-      navigate("/ulasan_produk");
+      navigate("/UlasanProduk");
     }
     setIsModalOpen(false);
   };

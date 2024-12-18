@@ -4,7 +4,7 @@ import Header from "./components/HeaderAfterLogin";
 import Footer from "./components/Footer";
 import "./file_css/opsibayar.css";
 
-const Opsibayar = () => {
+const OpsiBayar = () => {
   const location = useLocation(); // Mengambil state dari halaman sebelumnya
   const totalPayment = location.state?.totalPrice || 0; // Ambil totalPayment dari state
 
@@ -31,7 +31,7 @@ const Opsibayar = () => {
     }
 
     // Tentukan tujuan berdasarkan tab yang aktif
-    const destination = activeTab === "electronic" ? "/qr" : "/va";
+    const destination = activeTab === "electronic" ? "/QR" : "/VA";
 
     // Navigasi ke halaman tujuan dengan meneruskan totalPayment
     navigate(destination, { state: { totalPayment } });
@@ -200,4 +200,4 @@ const Opsibayar = () => {
   );
 };
 
-export default Opsibayar;
+export default OpsiBayar;

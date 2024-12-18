@@ -4,7 +4,7 @@ import Header from "./components/HeaderBeforeLogin";
 import Footer from "./components/Footer";
 import './file_css/forgotpass.css';
 
-const resetpass = () => {
+const ResetPass = () => {
   return (
     <div className="forgot-password-page">
       {/* header */}
@@ -30,4 +30,4 @@ const resetpass = () => {
   );
 };
 
-export default resetpass;
+export default ResetPass;

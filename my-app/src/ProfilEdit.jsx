@@ -4,7 +4,7 @@ import Header from "./components/HeaderAfterLogin";
 import Footer from "./components/Footer";
 import './file_css/profil.css';
 
-const Profil_Edit = () => {
+const ProfilEdit = () => {
   const [showPopup, setShowPopup] = useState(false);
   const navigate = useNavigate();
 
@@ -100,4 +100,4 @@ const Profil_Edit = () => {
   );
 };
 
-export default Profil_Edit;
+export default ProfilEdit;

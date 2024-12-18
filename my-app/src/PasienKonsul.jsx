@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import "./file_css/ChatPage.css";
 import Header from "./components/HeaderDokter";
-import Footer from "./components/FooterDokter";
 import FooterDokter from "./components/FooterDokter";
 
 const socket = io("http://localhost:5000"); // Hubungkan ke backend di port 5000

@@ -15,10 +15,10 @@ const HeaderAfterLogin = () => {
             <Link to="/HomeAfterLogin">BERANDA</Link>
           </li>
           <li>
-            <Link to="/AboutUs_Login">TENTANG KAMI</Link>
+            <Link to="/AboutUsLogin">TENTANG KAMI</Link>
           </li>
           <li>
-            <Link to="/produk">PRODUK</Link>
+            <Link to="/Produk">PRODUK</Link>
           </li>
           <li>
             <Link to="/Ahli">KONSULTASI</Link>
@@ -26,7 +26,7 @@ const HeaderAfterLogin = () => {
         </ul>
       </nav>
       <div className="auth-buttons">
-        <Link to="/profil">
+        <Link to="/Profil">
           <button>Profil</button>
         </Link>
       </div>

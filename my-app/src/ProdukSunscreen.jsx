@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "./components/HeaderAfterLogin";
 import Footer from "./components/Footer";
 
-const ProdukPembersih = () => {
+const ProdukSunscreen = () => {
   const [produk, setProduk] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -98,4 +98,4 @@ const ProdukPembersih = () => {
   );
 };
 
-export default ProdukPembersih;
+export default ProdukSunscreen;

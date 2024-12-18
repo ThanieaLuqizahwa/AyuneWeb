@@ -38,7 +38,7 @@ const RincianBayar = () => {
 
   // Fungsi untuk navigasi ke halaman OpsiBayar
   const handleNavigateToPayment = () => {
-    navigate("/Opsi_Bayar", { state: { totalPrice } }); // Navigasi ke OpsiBayar dengan state totalPrice
+    navigate("/OpsiBayar", { state: { totalPrice } }); // Navigasi ke OpsiBayar dengan state totalPrice
   };
 
   return (

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./file_css/datadokter.css";
 import AdminGuard from "./AdminGuard";
 
-const Datadokter = () => {
+const DataDokter = () => {
   const [dataDokter, setDataDokter] = useState([]);
   const [formData, setFormData] = useState({
     nama_dokter: "",
@@ -178,16 +178,16 @@ const Datadokter = () => {
                 <Link to="/Dashboard">DASHBOARD</Link>
               </li>
               <li>
-                <Link to="/Dataproduk">DATA PRODUK</Link>
+                <Link to="/DataProduk">DATA PRODUK</Link>
               </li>
               <li>
-                <Link to="/Datadeskripsiproduk">DATA DESKRIPSI PRODUK</Link>
+                <Link to="/DataDeskripsiProduk">DATA DESKRIPSI PRODUK</Link>
               </li>
               <li>
-                <Link to="/Datadokter">DATA DOKTER</Link>
+                <Link to="/DataDokter">DATA DOKTER</Link>
               </li>
               <li>
-                <Link to="/Datauser">DATA USER</Link>
+                <Link to="/DataUser">DATA USER</Link>
               </li>
             </ul>
           </nav>
@@ -442,4 +442,4 @@ const Datadokter = () => {
   );
 };
 
-export default Datadokter;
+export default DataDokter;

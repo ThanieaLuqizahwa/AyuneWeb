@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "./components/HeaderAfterLogin";
 import Footer from "./components/Footer";
 
-const ProdukPelembab = () => {
+const ProdukSerum = () => {
   const [produk, setProduk] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -98,4 +98,4 @@ const ProdukPelembab = () => {
   );
 };
 
-export default ProdukPelembab;
+export default ProdukSerum;

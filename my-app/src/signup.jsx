@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./file_css/index.css"; // Pastikan untuk mengimpor file CSS jika diperlukan
 
-const Signup = () => {
+const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -237,4 +237,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignUp;
